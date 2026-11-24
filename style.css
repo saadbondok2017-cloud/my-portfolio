@@ -1,0 +1,83 @@
+:root {
+  --main: #1f5a7a;
+  --ink: #17262e;
+  --paper: #f7fafb;
+  --line: #d3e0e6;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Cairo", Tahoma, Arial, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.9;
+  font-size: 1.05rem;
+}
+
+.hero {
+  background: var(--main);
+  color: #fff;
+  padding: 4rem 1.5rem 3.5rem;
+}
+
+.hero > * {
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.hello { margin-block: 0 .25rem; opacity: .85; }
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 12vw, 5rem);
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.role { margin-block: .75rem 0; font-size: 1.15rem; }
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 2rem;
+}
+
+section { padding-block: 1.75rem; border-bottom: 1px solid var(--line); }
+section:last-child { border-bottom: 0; }
+
+h2 { margin: 0 0 .5rem; font-size: 1.4rem; color: var(--main); }
+
+p { margin: 0 0 .75rem; }
+
+.skills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+}
+
+.skills li {
+  border: 1px solid var(--main);
+  border-radius: 999px;
+  padding: .1rem 1rem;
+}
+
+.mail {
+  color: var(--main);
+  font-weight: 600;
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
+a:focus-visible { outline: 3px solid var(--main); outline-offset: 3px; }
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #5b6b73;
+  font-size: .9rem;
+}
